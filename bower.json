@@ -1,0 +1,31 @@
+{
+  "name": "koco-loading-modal",
+  "version": "0.1.0",
+  "authors": [
+    "fcharest <frederik.charest@radio-canada.ca>"
+  ],
+  "description": "Loading modal form using knockout and bootstrap modal",
+  "main": "src/koco-loading.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "modal",
+    "koco"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout-modaler": "~0.1.36",
+    "knockout-utilities": "~0.2.2",
+    "bootstrap": "~3.3.4",
+    "knockout": "~3.3.0",
+    "jquery": "~2.1.4"
+  }
+}

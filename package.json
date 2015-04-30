@@ -1,0 +1,11 @@
+{
+  "name": "koco-loading-modal",
+  "version": "0.1.0",
+  "description": "Loading modal form using knockout and bootstrap modal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
