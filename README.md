@@ -1,5 +1,5 @@
 # koco-loading-modal
-Loading modal for koco project.
+Loading modal for koco project. the main advantages of this component is that you can switch the loading status (message) anytime you want without having to hide and show the modal everytime. This is useful when initializing or doing long operations and keeping your users updated.
 
 ## Installation
 
