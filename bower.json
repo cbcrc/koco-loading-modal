@@ -22,10 +22,9 @@
     "tests"
   ],
   "dependencies": {
-    "knockout-modaler": "~0.1.36",
-    "knockout-utilities": "~0.2.2",
-    "bootstrap": "~3.3.4",
-    "knockout": "~3.3.0",
-    "jquery": "~2.1.4"
+    "bootstrap": "^3.3.4",
+    "knockout": "^3.3.0",
+    "jquery": "^2.1.4",
+    "koco-modaler": "^0.2.0"
   }
 }
