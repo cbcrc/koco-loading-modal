@@ -37,7 +37,6 @@ define(['modaler', 'knockout', 'jquery'],
 				modaler.hideCurrentModal().then(function () {
 					self.message('');
 					dfd.resolve();
-					console.log('resolved');
 				});
 			}).promise();
 		};
