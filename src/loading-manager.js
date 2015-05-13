@@ -6,6 +6,7 @@ define(['modaler', 'knockout', 'jquery'],
 		'use strict';
 
 		var LoadingManager = function () {
+			var self = this;
             modaler.registerModal('loading', {
                 basePath: 'bower_components/koco-loading-modal/src',
                 backdrop: 'static',
@@ -16,6 +17,8 @@ define(['modaler', 'knockout', 'jquery'],
 		};
 
 		LoadingManager.prototype.show = function (message) {
+			var self = this;
+
 			return $.Deferred(function (dfd) {
 				if (self.message()) {
 					self.message(message);
@@ -33,6 +36,8 @@ define(['modaler', 'knockout', 'jquery'],
 		};
 
 		LoadingManager.prototype.hide = function () {
+			var self = this;
+
 			return $.Deferred(function (dfd) {
 				modaler.hideCurrentModal().then(function () {
 					self.message('');

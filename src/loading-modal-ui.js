@@ -6,7 +6,7 @@ define(['text!./loading-modal.html', 'knockout'],
 		'use strict';
 
 		var ViewModel = function(context/*, componentInfo*/) {
-			this.text = context.params.message;
+			this.message = context.params.message;
 		};
 
         return {
