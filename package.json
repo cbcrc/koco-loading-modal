@@ -1,6 +1,6 @@
 {
   "name": "koco-loading-modal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Loading modal form using knockout and bootstrap modal",
   "main": "index.js",
   "scripts": {

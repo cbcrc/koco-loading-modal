@@ -1,6 +1,6 @@
 {
   "name": "koco-loading-modal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     "fcharest <frederik.charest@radio-canada.ca>"
   ],
@@ -25,6 +25,6 @@
     "bootstrap": "^3.3.4",
     "knockout": "^3.3.0",
     "jquery": "^2.1.4",
-    "koco-modaler": "^0.2.0"
+    "koco-modaler": "^0.3.0"
   }
 }

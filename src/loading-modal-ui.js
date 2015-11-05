@@ -1,20 +1,13 @@
 // Copyright (c) CBC/Radio-Canada. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-define(['text!./loading-modal.html', 'knockout'],
-	function(template, ko) {
+define([],
+	function() {
 		'use strict';
 
 		var ViewModel = function(context/*, componentInfo*/) {
 			this.message = context.params.message;
 		};
 
-        return {
-            viewModel: {
-                createViewModel: function(context, componentInfo) {
-                    return new ViewModel(context, componentInfo);
-                }
-            },
-            template: template
-        };
+        return ViewModel;
 	});
