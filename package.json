@@ -1,23 +1,23 @@
 {
-    "name": "koco-loading-modal",
-    "version": "0.2.0",
-    "authors": [
-        "fcharest <frederik.charest@radio-canada.ca>"
-    ],
-    "description": "Loading modal form using knockout and bootstrap modal",
-    "main": "src/koco-loading.js",
-    "keywords": [
-        "modal",
-        "koco"
-    ],
-    "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "bootstrap": "^3.3.4",
-        "knockout": "^3.3.0",
-        "jquery": "^2.1.4",
-        "koco-modaler": "^0.3.0"
-    }
+  "name": "koco-loading-modal",
+  "version": "1.0.0",
+  "authors": [
+    "fcharest <frederik.charest@radio-canada.ca>"
+  ],
+  "description": "Loading modal form using knockout and bootstrap modal",
+  "main": "src/koco-loading.js",
+  "keywords": [
+    "modal",
+    "koco"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "knockout": "^3.3.0",
+    "jquery": "^2.1.4",
+    "koco-modaler": "^0.3.0"
+  }
 }
