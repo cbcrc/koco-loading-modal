@@ -15,9 +15,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.4",
-    "knockout": "^3.3.0",
-    "jquery": "^2.1.4",
-    "koco-modaler": "^0.3.0"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4",
+    "knockout": "^3.4.0",
+    "koco": "^1.0.0",
+    "koco-modaler": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
   }
 }
