@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _modaler = require('modaler');
+var _kocoModaler = require('koco-modaler');
 
-var _modaler2 = _interopRequireDefault(_modaler);
+var _kocoModaler2 = _interopRequireDefault(_kocoModaler);
 
 var _knockout = require('knockout');
 
@@ -20,7 +20,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var LoadingManager = function LoadingManager() {
     var self = this;
-    _modaler2.default.registerModal('loading', {
+    _kocoModaler2.default.registerModal('loading', {
         basePath: 'bower_components/koco-loading-modal/src',
         backdrop: 'static',
         keyboard: false
@@ -39,7 +39,7 @@ LoadingManager.prototype.show = function (message) {
         } else {
             self.message(message);
 
-            _modaler2.default.show('loading', {
+            _kocoModaler2.default.show('loading', {
                 message: self.message,
                 disabelKeyEvents: true
             }, function () {
@@ -53,7 +53,7 @@ LoadingManager.prototype.hide = function () {
     var self = this;
 
     return _jquery2.default.Deferred(function (dfd) {
-        _modaler2.default.hideCurrentModal().then(function () {
+        _kocoModaler2.default.hideCurrentModal().then(function () {
             self.message('');
             dfd.resolve();
         });
