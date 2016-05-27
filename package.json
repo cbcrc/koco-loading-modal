@@ -1,6 +1,6 @@
 {
   "name": "koco-loading-modal",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "authors": [
     "fcharest <frederik.charest@radio-canada.ca>"
   ],
@@ -16,9 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "jquery": "^2.2.4",
+    "jquery": "^2.1.4",
     "knockout": "^3.4.0",
-    "koco": "^1.0.0",
     "koco-modaler": "^1.1.0"
   },
   "devDependencies": {
@@ -31,5 +30,8 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1"
+  },
+  "peerDependencies": {
+    "koco": "^1.0.0"
   }
 }
