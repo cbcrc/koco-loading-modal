@@ -7,44 +7,42 @@ import $ from 'jquery';
 
 
 var LoadingManager = function() {
-    var self = this;
-    modaler.registerModal('loading', {
-        basePath: 'bower_components/koco-loading-modal/src',
-        backdrop: 'static',
-        keyboard: false
-    });
+  var self = this;
+  modaler.registerModal('loading', {
+    basePath: 'bower_components/koco-loading-modal/src',
+    backdrop: 'static',
+    keyboard: false
+  });
 
-    self.message = ko.observable('');
+  self.message = ko.observable('');
 };
 
 LoadingManager.prototype.show = function(message) {
-    var self = this;
+  var self = this;
 
-    return $.Deferred(function(dfd) {
-        if (self.message()) {
-            self.message(message);
-        } else {
-            self.message(message);
+  return new Promise((resolve) => {
+    if (self.message()) {
+      self.message(message);
+    } else {
+      self.message(message);
 
-            modaler.show('loading', {
-                message: self.message,
-                disabelKeyEvents: true
-            }, function() {
-                dfd.resolve();
-            });
-        }
-    }).promise();
+      modaler.show('loading', {
+        message: self.message,
+        disabelKeyEvents: true
+      }, resolve);
+    }
+  });
 };
 
 LoadingManager.prototype.hide = function() {
-    var self = this;
+  var self = this;
 
-    return $.Deferred(function(dfd) {
-        modaler.hideCurrentModal().then(function() {
-            self.message('');
-            dfd.resolve();
-        });
-    }).promise();
+  return new Promise((resolve) => {
+    modaler.hideCurrentModal().then(function() {
+      self.message('');
+      resolve();
+    });
+  });
 };
 
 export default new LoadingManager();
