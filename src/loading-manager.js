@@ -9,7 +9,7 @@ import $ from 'jquery';
 var LoadingManager = function() {
   var self = this;
   modaler.registerModal('loading', {
-    basePath: 'bower_components/koco-loading-modal/src',
+    isNpm: true,
     backdrop: 'static',
     keyboard: false
   });

@@ -32,7 +32,7 @@
   var LoadingManager = function LoadingManager() {
     var self = this;
     _kocoModaler2.default.registerModal('loading', {
-      basePath: 'bower_components/koco-loading-modal/src',
+      isNpm: true,
       backdrop: 'static',
       keyboard: false
     });
